@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Online Learning platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <header>
+        <div class="logo"> "Online Learning Platform"</div>
+        <nav>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="video.html">Lessons</a>
+          <a href="quiz.html">Quiz</a>
+          <a href="certificate.html">Certificate</a>
+          <a href="login.html">Logout</a>
+        </nav>
+      </header>
+      
+    <div class="logo"> Online Learning platform </div>
+  
+  
+  <div class="auth-container">
+    <div class="auth-form">
+      <h2>Login</h2>
+      <form action="" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Enter your password">
+        
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#signup">Sign up</a></p>
+    </div>
+
+    <div class="auth-form" id="signup">
+      <h2>Sign Up</h2>
+      <form action="" method="POST">
+        <label for="new-email">Email:</label>
+        <input type="email" id="new-email" name="new-email" required placeholder="Enter your email">
+        
+        <label for="new-password">Password:</label>
+        <input type="password" id="new-password" name="new-password" required placeholder="Create a password">
+        
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+        
+        <button type="submit">Sign Up</button>
+      </form>
+      <p>Already have an account? <a href="#login">Login</a></p>
+    </div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 Online Learning Platform | All rights reserved</p>
+  </footer>
+</body>
+</html>

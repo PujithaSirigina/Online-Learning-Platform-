@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate | Online Learning Platform</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+      #certificate-section {
+          display: none;  /* Hide certificate by default */
+          text-align: center;
+          margin-top: 20px;
+      }
+      .certificate-container img {
+          width: 80%;
+          max-width: 600px;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Online Learning Platform</div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="video.html">Lessons</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="certificate.html">Certificate</a>
+      <a href="login.html">Logout</a>
+    </nav>
+  </header>
+
+  <section id="certificate-section">
+    <h1>🎉 Congratulations! 🎉</h1>
+    <p>You have successfully completed the course.</p>
+
+    <div class="certificate-container">
+      <img id="certificate-img" src="Certificate..png" alt="Certificate Preview">
+    </div>
+    
+    <button onclick="downloadCertificate()">Download Certificate</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Online Learning Platform | All rights reserved</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        if (localStorage.getItem("quizPassed") === "true") {
+            document.getElementById("certificate-section").style.display = "block";
+        } else {
+            alert("You need to pass the quiz to view the certificate!");
+            window.location.href = "quiz.html";
+        }
+    });
+
+    function downloadCertificate() {
+        const certificateImg = document.getElementById("certificate-img");
+        const link = document.createElement("a");
+        link.href = certificateImg.src;
+        link.download = "Certificate.png";
+        link.click();
+    }
+  </script>
+
+</body>
+</html>
