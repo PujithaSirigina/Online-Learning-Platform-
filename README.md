@@ -1,4 +1,9 @@
 # Online-Learning-Platform-
+ NAME: Pujitha Sirigina
+ COMPANY:COTECH IT SOLUTIONS 
+ DURATION: Jan 05,2025 TO Feb 5,2025 
+ DOMAIN:FRONTEND WEB DEVELOPMENT
+ Intern ID :CTO8IRK
 ![image](https://github.com/user-attachments/assets/c921a74e-e998-4a5a-8764-12ca7539834d)
 Online Learning Platform
 This repository contains the code for a simple Online Learning Platform designed to provide a user-friendly interface for students to access educational resources such as video lessons, quizzes, and certificates. The platform is developed using HTML and CSS and is structured to include multiple pages, which are linked to provide a seamless learning experience.
